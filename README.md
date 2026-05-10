@@ -99,12 +99,12 @@
 
 <div align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=blackalex1&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&title_color=00FFAA&text_color=ffffff&icon_color=00FFAA">
-  <img height="185" src="https://github-readme-stats.vercel.app/api?username=blackalex1&show_icons=true&theme=default&hide_border=true&count_private=true&title_color=006d3a&text_color=1a1b27&icon_color=006d3a">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/blackalex1/blackalex1/output/github-metrics.svg">
+  <img height="200" src="https://raw.githubusercontent.com/blackalex1/blackalex1/output/github-metrics.svg">
 </picture>
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=blackalex1&layout=compact&theme=tokyonight&hide_border=true&title_color=00FFAA&text_color=ffffff">
-  <img height="185" src="https://github-readme-stats.vercel.app/api/top-langs/?username=blackalex1&layout=compact&theme=default&hide_border=true&title_color=006d3a&text_color=1a1b27">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/blackalex1/blackalex1/output/github-languages.svg">
+  <img height="200" src="https://raw.githubusercontent.com/blackalex1/blackalex1/output/github-languages.svg">
 </picture>
 </div>
 
