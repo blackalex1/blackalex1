@@ -16,8 +16,9 @@ jobs:
           filename: github-metrics.svg
           base: header, activity, community, repositories, metadata
           config_timezone: UTC
-          design_title_color: "#00FFAA"
-          design_text_color: "#ffffff"
+          extras_css: |
+            h2 { color: #00FFAA; }
+            text, tspan { fill: #ffffff; }
           committer_branch: output
           
       - name: Top Languages
@@ -30,6 +31,7 @@ jobs:
           plugin_languages_ignored: html, css, tex, less, dockerfile, makefile
           plugin_languages_limit: 8
           config_timezone: UTC
-          design_title_color: "#00FFAA"
-          design_text_color: "#ffffff"
+          extras_css: |
+            h2 { color: #00FFAA; }
+            text, tspan { fill: #ffffff; }
           committer_branch: output
