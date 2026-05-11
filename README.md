@@ -65,8 +65,3 @@
   <img src="https://raw.githubusercontent.com/blackalex1/blackalex1/output/scanner.svg" width="850"/>
 </div>
 
-<br/>
-
-<div align="center">
-  <img src="https://raw.githubusercontent.com/blackalex1/blackalex1/output/wave.svg" width="850"/>
-</div>
