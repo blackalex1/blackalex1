@@ -4,6 +4,23 @@ on:
   schedule:
     - cron: "0 0 * * *"
   workflow_dispatch:
+    inputs:
+      username:
+        description: 'GitHub Username'
+        required: true
+        default: 'blackalex1'
+      telegram:
+        description: 'Telegram Username'
+        required: false
+        default: 'blackalex1'
+      color:
+        description: 'Accent Color (Hex)'
+        required: false
+        default: '#00FFAA'
+      graphs:
+        description: 'Graphs to generate'
+        required: false
+        default: 'all'
   push:
     branches: ["main", "master"]
 
@@ -15,7 +32,6 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
-
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -34,7 +50,10 @@ jobs:
           METRICS_TOKEN: ${{ secrets.METRICS_TOKEN }}
         run: |
           cd stats-tool
-          python generator.py --username blackalex1 --color "#00FFAA"
+          python generator.py --username "${{ github.event.inputs.username || 'blackalex1' }}" \
+                             --telegram "${{ github.event.inputs.telegram || 'blackalex1' }}" \
+                             --color "${{ github.event.inputs.color || '#00FFAA' }}" \
+                             --graphs ${{ github.event.inputs.graphs || 'all' }}
           cp -r output/* ../output/
 
       - name: Deploy to Output Branch
