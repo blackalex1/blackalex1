@@ -1,0 +1,53 @@
+name: Dashboard
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+  push:
+    branches: ["main", "master"]
+
+jobs:
+  update-dashboard:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Generate Snake
+        uses: Platane/snk@v3
+        with:
+          github_user_name: blackalex1
+          outputs: |
+            output/github-snake.svg?color_snake=#00FFAA&color_dots=#161b22,#003820,#006d3a,#00a651,#00FFAA
+            output/github-snake-dark.svg?palette=github-dark&color_snake=#00FFAA&color_dots=#161b22,#003820,#006d3a,#00a651,#00FFAA
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Clone Statistics Tool
+        run: git clone https://github.com/blackalex1/Statistics.git stats-tool
+
+      - name: Install Dependencies
+        run: |
+          pip install -r stats-tool/requirements.txt
+
+      - name: Generate Statistics SVGs
+        env:
+          METRICS_TOKEN: ${{ secrets.METRICS_TOKEN }}
+        run: |
+          cd stats-tool
+          python generator.py --username blackalex1 --color "#00FFAA"
+          cp -r output/* ../output/
+
+      - name: Deploy to Output Branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: output
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
