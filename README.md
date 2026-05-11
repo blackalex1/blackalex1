@@ -7,11 +7,6 @@
     <img src="https://raw.githubusercontent.com/blackalex1/blackalex1/output/telegram.svg" width="220"/>
   </a>
 </p>
-
-<div align="center">
-  <img src="https://raw.githubusercontent.com/blackalex1/blackalex1/output/typing.svg" width="500"/>
-</div>
-
 <br/>
 
 <div align="center">
