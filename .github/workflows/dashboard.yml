@@ -49,6 +49,7 @@ jobs:
         env:
           METRICS_TOKEN: ${{ secrets.METRICS_TOKEN }}
         run: |
+          mkdir -p output
           cd stats-tool
           python generator.py --username "${{ github.event.inputs.username || 'blackalex1' }}" \
                              --telegram "${{ github.event.inputs.telegram || 'blackalex1' }}" \
