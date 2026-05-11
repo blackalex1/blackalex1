@@ -16,13 +16,6 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Generate Snake
-        uses: Platane/snk@v3
-        with:
-          github_user_name: blackalex1
-          outputs: |
-            output/github-snake.svg?color_snake=#00FFAA&color_dots=#161b22,#003820,#006d3a,#00a651,#00FFAA
-            output/github-snake-dark.svg?palette=github-dark&color_snake=#00FFAA&color_dots=#161b22,#003820,#006d3a,#00a651,#00FFAA
 
       - name: Set up Python
         uses: actions/setup-python@v5
