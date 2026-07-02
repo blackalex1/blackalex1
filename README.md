@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/blackalex1/blackalex1/output/combined.svg?v=1" width="850"/>
+  <img src="https://raw.githubusercontent.com/blackalex1/blackalex1/output/combined.svg?v=2" width="850"/>
 </div>
 
 <p align="center">
