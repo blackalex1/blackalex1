@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://t.me/blackalex1">
-    <img src="https://raw.githubusercontent.com/blackalex1/blackalex1/output/telegram.svg?v=4" width="850"/>
+    <img src="https://raw.githubusercontent.com/blackalex1/blackalex1/output/telegram.svg?v=5" width="850"/>
   </a>
 </p>
 
