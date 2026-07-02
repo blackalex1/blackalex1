@@ -9,7 +9,7 @@
 </p>
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/blackalex1/blackalex1/output/terminal.svg?v=3" width="850"/>
+  <img src="https://raw.githubusercontent.com/blackalex1/blackalex1/output/terminal.svg?v=4" width="850"/>
 </div>
 
 <div align="center">
