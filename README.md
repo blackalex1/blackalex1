@@ -13,7 +13,7 @@
 </div>
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/blackalex1/blackalex1/output/stack.svg?v=2" width="850"/>
+  <img src="https://raw.githubusercontent.com/blackalex1/blackalex1/output/stack.svg?v=3" width="850"/>
 </div>
 
 <div align="center">
