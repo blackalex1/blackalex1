@@ -44,8 +44,8 @@
 <h2 align="center">📊 Systems Analytics</h2>
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/blackalex1/blackalex1/output/stats.svg" height="220"/>
-  <img src="https://raw.githubusercontent.com/blackalex1/blackalex1/output/languages.svg" height="220"/>
+  <img src="https://raw.githubusercontent.com/blackalex1/blackalex1/output/stats.svg" height="180"/>
+  <img src="https://raw.githubusercontent.com/blackalex1/blackalex1/output/languages.svg" height="180"/>
 </div>
 
 <br/>
