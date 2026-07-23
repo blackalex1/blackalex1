@@ -51,6 +51,10 @@ jobs:
         run: |
           mkdir -p output
           cd stats-tool
+          git fetch origin metrics:metrics || true
+          git checkout metrics || true
+          cp -r output/* ../output/ || true
+          git checkout main || true
           python generator.py --username "${{ github.event.inputs.username || 'blackalex1' }}" \
                              --telegram "${{ github.event.inputs.telegram || 'blackalex1' }}" \
                              --color "${{ github.event.inputs.color || '#00FFAA' }}" \

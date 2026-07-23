@@ -9,5 +9,5 @@
 </p>
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/blackalex1/blackalex1/output/combined.svg?v=5" width="850"/>
+  <img src="https://raw.githubusercontent.com/blackalex1/blackalex1/output/combined.svg?v=6" width="850"/>
 </div>
